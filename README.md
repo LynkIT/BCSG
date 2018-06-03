@@ -36,9 +36,9 @@ loops through the rows.
 
 CSV format - example
 ====================
-HSBC Canada,5601-2345-3446-5678,Oct-2018
-Royal Bank of Canada,4519-4532-4524-2456,Nov-2018
-American Express,3786-7334-8965-345,Dec-2019
+HSBC Canada,5601-2345-3446-5678,Oct-2018<br />
+Royal Bank of Canada,4519-4532-4524-2456,Nov-2018<br />
+American Express,3786-7334-8965-345,Dec-2019<br />
 
 Operation
 =========
@@ -78,7 +78,7 @@ without worrying about the underlying PHP architecture.
 
 Modules
 =======
-The architecture of the framework allows for new mnodules to be added easily. Only the required module
+The architecture of the framework allows for new modules to be added easily. Only the required module
 is loaded into memory during execution which allows for a lean memory footprint. The index.php
 acts as the controller for loading the module into memory and executing it.
 
@@ -91,11 +91,10 @@ are introduced to cut down on the test cycle times.
 
 How it works
 ============
-index.php looks for the presence of a module code and, if absent defaults to the "home" module.
-This is loaded in and initialised with hte init method, where a selection of methods can be
-accessed via the URL. On entry, the default method "display()" is called which outputs the UI
+index.php looks for the presence of a module code in the URI and, if absent defaults to the "home" module.
+THe corresponding module is loaded in and initialised with the init method, where a selection of methods can be
+accessed via the URI. On entry, the default method "display()" is called which outputs the UI
 to the screen. Subsequent ajax calls to other methods within the home module are then triggered
 which render the credit card list to the ajax parser for display to the screen.
 
-The credit cards are "databased" using a Session wrapper around PHPs built in session handling
-functions.
+The credit cards are "databased" using the Session wrapper.
