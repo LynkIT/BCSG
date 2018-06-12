@@ -1,0 +1,56 @@
+/*Resets*/
+article,section,figure,figcaption,aside,
+header,footer,hgroup,nav,menu 			{ display:block; }
+pre,code								{ font-size:1em; }
+body,p,ul,td,th							{ font:12px/18px roboto,Arial,Helvetica,sans-serif; color:#333; }
+ul,nav ul li,pre,form,body,html,
+blockquote,fieldset,input,figure,
+figcaption,aside,article,section,
+nav,header,footer,hgroup,dl,dt,
+dd,address								{ margin:0; padding:0; font-style:normal; }
+ul,li 									{ list-style:none; }
+ul li 									{ margin:5px 0; padding-left:20px; }
+a img,:link img,:visited img			{ border:none; }
+.warn,p.warn							{ color:#a00; font-weight:bold; }
+div										{ border:0 solid red; }
+p,li,dl,dt,dd,h1,h2,h3,h4,h5,h6 		{ margin:10px 0; font-weight:normal; }
+h1 										{ font-size:1.8em; color:#8888; margin:0; }
+h2 										{ font-size:1.7em; color:#7c99d5; }
+h3 										{ font-size:1.5em; color:#333; }
+h4 										{ font-size:1.3em; color:#333; }
+h5 										{ font-size:1.2em; color:#333; }
+html 									{ height:100%; }
+body 									{ background:#FFF; height:100%; }
+
+/*System styling*/
+header									{ border-bottom:1px solid #8888; box-shadow:0 1px 0 0 10px #8888; height:1.8em; padding:20px; }
+main									{ width:1020px; margin:10px auto; }
+
+/*Forms and controls*/
+.fieldset 								{ background:#343C44; border:1px solid #2B3239; border-radius:2px; display:inline-block; margin-right:20px; padding:5px; }
+span.dropdown select::-ms-expand 		{ display:none; }
+span.dropdown 							{ background-color:#38414A; background-image:linear-gradient(#5B6772, #424D57); border:1px solid #2B3239; border-radius:3px; color:#FEFEFE; cursor:pointer; display:block; float:left; position:relative; text-decoration:none; }
+span.dropdown.disabled, span.dropdown.disabled:active, span.dropdown.disabled:hover { background:#E6E6E6; box-shadow:none; }
+span.dropdown:hover , span.dropdown:active { background-image:linear-gradient(#5B6772, #2F3A44); border:1px solid #1B2127; box-shadow:0 1px 1px rgba(0, 0, 0, .1); }
+span.dropdown:active 					{ box-shadow:0 1px 2px rgba(0, 0, 0, .3) inset; }
+span.dropdown:before 					{ border-left:1px solid #2B3239; bottom:0; content:'\f0d7'; font-family:'FontAwesome'; line-height:6px; padding:10px 6px; position:absolute; right:0; top:0; }
+span.dropdown select 					{ background:transparent; border:0 none; color:rgb(255, 255, 255); display:block; font-family:arial; font-size:11px; height:27px; line-height:14px; overflow:hidden; padding:4px 21px 4px 6px; position:relative; text-align:left; text-overflow:ellipsis; white-space:nowrap; -moz-appearance:none; -webkit-appearance:none; }
+span.dropdown option 					{ background:#FFF; color:#333; font-size:12px; padding:3px 8px; }
+span.dropdown optgroup 					{ background:#FFF; border-bottom:1px solid #AAA; color:#AAA; font-size:10px; font-style:normal; padding:4px; }
+span.dropdown option:disabled 			{ color:#878585; }
+span.dropdown.light						{ background-color:transparent; background-image:none; color:#000; }
+span.dropdown.light select				{ color:#000; }
+span.dropdown select[disabled=disabled]	{ background:#EEE; border:1px solid #AAA; }
+
+fieldset								{ background:#343C44; border:1px solid #2B3239; border-radius:2px; display:inline-block; margin:10px 0 0 0; padding:15px; width:590px; }
+label 									{ clear:left; color:#83899A; display:inline-block; float:left; margin:10px 10px 0 10px; padding:0; text-align:right; width:130px; }
+legend									{ background:#343C44; border:1px solid #2B3239; color:#888; margin:0; padding:7px 14px; }
+input[type='text'] 						{ background:#FFF; border:1px solid #2B3239; border-radius:3px; margin:5px 0; padding:6px; }
+input[disabled='disabled'] 				{ background:#EEE; border:1px solid #8B9299; }
+input[type='submit'],
+.button 								{ background-color:#4D90FE; background-image:linear-gradient(#4d90fe,#4787ed); border:1px solid #3079ED; border-radius:2px; box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.11) inset; color:white; cursor:pointer; display: inline-block; float: none; font-size: 11px; height: 27px; line-height: 27px; margin:10px 0; min-width: 54px; padding: 0 8px; text-align: center; text-decoration: none; font-family: "roboto", arial, sans-serif; }
+input.disabled,input.disabled:hover		{ background:#CCC; color:#F6F6F6; border:1px solid #939393; cursor: default; box-shadow:none; text-shadow:none; }
+
+/* Helpers */
+.clearfloat								{ clear:both; line-height:0; font-size:0; content:'.'; }
+.loading 								{ background:#FFF; color:#AAA; content:'Loading...'; height:100px; width:100%; text-align:center; }

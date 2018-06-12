@@ -1,0 +1,16 @@
+.cardlist							{ background:#F7F7F7; margin:10px 0 30px 0; min-height:60px; }
+.cardlist h2						{ padding:20px 0; text-align:center; }
+
+.cardnumbers						{ border-top:1px solid #8888; border-right:1px solid #8888; }
+.cardnumbers th,.cardnumbers td		{ border-bottom:1px solid #8888; border-left:1px solid #8888; padding:3px 10px; }
+.cardnumbers th						{ background:#C6DAF8; color:#3338; font-weight:bold; text-align:left; }
+.cardnumbers td						{ background:#FFF; color:#333; }
+
+.center								{ color:#AAA; textalign:center; }
+form								{ border:1px solid #AAAA; margin-top:20px; padding:20px; }
+form h3								{ border-bottom:1px solid #CCC; margin:0 0 10px 0; }
+
+
+div.progress 						{ border: 1px solid rgb(225, 225, 225); height: 25px; line-height: 27px; position: relative; margin:10px 0 10px 150px; padding: 0; width: 100px; }
+div.percent, div.bar 				{ color: #0008; height: 25px; position: absolute; text-align: center; top: 0; width: 100%; }
+div.bar 							{ width: 0px; background: #96E68A; }
